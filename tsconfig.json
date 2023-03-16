@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "target": "es2021",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext",
+      "es2021"
+    ],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin"
+      }
+    ],
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/utils/tsconfig.json"
+  ],
+  "exclude": [
+    "node_modules",
+    "out"
+  ]
+}

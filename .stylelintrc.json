@@ -1,0 +1,16 @@
+{
+  "extends": [
+    "stylelint-config-recess-order",
+    "stylelint-config-recommended",
+    "stylelint-config-styled-components",
+    "stylelint-config-prettier"
+  ],
+  "plugins": ["stylelint-prettier", "stylelint-order"],
+  "ignoreFiles": ["node_modules/**", "lib/**", "out/**"],
+  "rules": {
+    "order/properties-alphabetical-order": true,
+    "property-no-unknown": true,
+    "block-no-empty": true
+  },
+  "processors": ["stylelint-processor-styled-components"]
+}
